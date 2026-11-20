@@ -1,0 +1,86 @@
+.blogs-container,
+.blog-form-container {
+    padding : 30px,
+    color : white;
+}
+
+.blog-controls {
+  display: flex;
+  gap: 15px;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+
+.blog-controls input,
+.blog-controls select,
+.blog-form-container input,
+.blog-form-container textarea,
+.blog-form-container select {
+  padding: 12px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #222;
+  color: white;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  );
+  gap: 25px;
+}
+
+.blog-card {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.blog-card h2 {
+  color: #39ff14;
+}
+
+.blog-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.blog-actions a,
+.blog-controls a {
+  color: #39ff14;
+} 
+
+.blog-actions button,
+.blog-form-container button {
+  background: #39ff14;
+  color: black;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.blog-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 650px;
+}
+.blog-form-container textarea {
+  min-width: 180px;
+  resize: verticle;
+}
+
+.error {
+  color: #ff6b6b;
+}
